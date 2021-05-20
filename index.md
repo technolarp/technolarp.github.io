@@ -29,7 +29,7 @@ Les dispositifs ***TechnoLarp*** sont conçus pour être :
 <div><img src="https://avatars.githubusercontent.com/u/5512824" width="64" height="64" style="border-radius: 50%;"> [@JosefRDA](https://github.com/JosefRDA) Développeur & Responsable communication </div>
 
 ## Eggrégore ASBL
-![](Logo_SF_black_180.png) Le projet ***TechnoLarp*** est hébergé par l'association de Jeu de Role Grandeur Nature Belge Eggrégore ASBL.
+<img src="Logo_SF_black_180.png" width="64" height="64" > Le projet ***TechnoLarp*** est hébergé par l'association de Jeu de Role Grandeur Nature Belge Eggrégore ASBL.
 
 
 
