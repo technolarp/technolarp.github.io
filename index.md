@@ -25,8 +25,8 @@ Les dispositifs ***TechnoLarp*** sont conçus pour être :
 
 # Structure
 ## L'équipe TechnoLarp
-<img src="https://avatars.githubusercontent.com/u/84352095" width="32" height="32" style="border-radius: 50%;"> [@marcelinDelcour](https://github.com/marcelinDelcour) Porteur du projet & Responsable technique
-<img src="https://avatars.githubusercontent.com/u/5512824" width="32" height="32" style="border-radius: 50%;"> [@JosefRDA](https://github.com/JosefRDA) Développeur & Responsable communication
+<img src="https://avatars.githubusercontent.com/u/84352095" width="64" height="64" style="border-radius: 50%;"> [@marcelinDelcour](https://github.com/marcelinDelcour) Porteur du projet & Responsable technique
+<img src="https://avatars.githubusercontent.com/u/5512824" width="64" height="64" style="border-radius: 50%;"> [@JosefRDA](https://github.com/JosefRDA) Développeur & Responsable communication
 
 ## Eggrégore ASBL
 ![](Logo_SF_black_180.png) Le projet ***TechnoLarp*** est hébergé par l'association de Jeu de Role Grandeur Nature Belge Eggrégore ASBL.
