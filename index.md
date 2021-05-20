@@ -8,7 +8,7 @@ En termes techniques, les dispositifs ***TechnoLarp*** se composent de :
 * De périphériques d’entrée / sorties divers (boutons poussoirs, potentiomètre, capteurs, écran oled, afficheur 7 segments, leds RGB, …)
 
 # Code Source
-[Nos Repository](https://github.com/technolarp) contiennent l'intégralité des codes sources des différentes solutions logicielle, documentation & fichier de conception composant les dispositifs ***TechnoLarp***.
+[Nos repository](https://github.com/technolarp) contiennent l'intégralité des codes sources des différentes solutions logicielle, documentation & fichier de conception composant les dispositifs ***TechnoLarp***.
 
 # Conception
 Les dispositifs ***TechnoLarp*** sont conçus pour être :
