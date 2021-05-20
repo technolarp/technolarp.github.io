@@ -2,10 +2,13 @@
 # Présentation du Projet
 ***TechnoLarp*** est une solution “clef en main” visant à rendre accessible à tout organisateur de [Jeu de Role Grandeur Nature](https://fr.wikipedia.org/wiki/Jeu_de_r%C3%B4le_grandeur_nature) la possibilité d’intégrer dans ses événements des objets de jeu ou décors interactifs reposant sur des moyens électroniques. 
 
-En termes techniques, les dispositifs TechnoLarp se composent de :
+En termes techniques, les dispositifs ***TechnoLarp*** se composent de :
 * Un ou plusieurs microcontrôleur de type [esp8266](https://fr.wikipedia.org/wiki/ESP8266) (de type [wemos/lolin](https://www.wemos.cc/en/latest/d1/d1_mini.html)).
 * D’un circuit imprimé (PCB) et de connecteurs soudés
 * De périphériques d’entrée / sorties divers (boutons poussoirs, potentiomètre, capteurs, écran oled, afficheur 7 segments, leds RGB, …)
+
+# Code Source
+[Nos Repository](https://github.com/technolarp) contiennent l'intégralité des codes sources des différentes solutions logicielle, documentation & fichier de conception composant les dispositifs ***TechnoLarp***.
 
 # Conception
 Les dispositifs ***TechnoLarp*** sont conçus pour être :
