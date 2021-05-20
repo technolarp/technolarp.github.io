@@ -1,4 +1,4 @@
-Projet en construction
+<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png" width="16" height="16">  Projet en construction <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a7.png" width="16" height="16">
 # Présentation du Projet
 ***TechnoLarp*** est une solution “clef en main” visant à rendre accessible à tout organisateur de [Jeu de Role Grandeur Nature](https://fr.wikipedia.org/wiki/Jeu_de_r%C3%B4le_grandeur_nature) la possibilité d’intégrer dans ses événements des objets de jeu ou décors interactifs reposant sur des moyens électroniques. 
 
