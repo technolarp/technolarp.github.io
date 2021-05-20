@@ -10,7 +10,7 @@ En termes techniques, les dispositifs TechnoLarp se composent de :
 # Conception
 Les dispositifs ***TechnoLarp*** sont conçus pour être :
 * **Facile d’utilisation pour les organisateurs**
-  *  **Aucune compétence en électronique ou en programmation requise** : Il est possible d'adapter les dispositifs aux besoins de votre événement uniquement par des actions de configuration.
+  *  **Aucune compétence en électronique ou en programmation n'est requise** : Il est possible d'adapter les dispositifs aux besoins de votre événement uniquement par des actions de configuration.
   *  Une fois les connecteurs soudés au PCB, aucune autre soudure n’est nécessaire (le déploiement d’un dispositif se limite à brancher des câbles en suivant les instructions du manuel ou des vidéos explicatives).
   *  L’ensemble des opérations de déploiement et d’utilisation des dispositifs TechnoLarp sont détaillés dans un manuel clair, exhaustif et illustré ainsi qu’un ensemble de capsules tutoriels-vidéo.
 *  **Adaptés aux besoins et cas d’utilisation de la pratique du GN**
@@ -20,7 +20,7 @@ Les dispositifs ***TechnoLarp*** sont conçus pour être :
    *  Au travers d’un back office accessible en wifi via n’importe quel navigateur (défaillance dans le déroulement du scénario d'éxécution, reboot non prévu, …)
    *  Chaque composant est facilement remplaçable en cas de panne matérielle.
 *  **Économiques** : Par souci de rendre les dispositifs ***TechnoLarp*** accessibles au plus grand nombre d’organisateurs nous restons vigilants à choisir les composants & matières premières adaptées à notre besoin offrant le meilleur rapport qualité-prix.
-*  **Open-Source** : L’ensemble des sources des différents logiciels composant la solution ***TechnoLarp***, des documentations et des fichiers de conception (plan de conception du PCB, fichiers permettant l'impression 3D des boitiers ...) sont diffusés sous licence open-source via les repository TechnoLarp. GitHub petmets également à notre communauté de nous remonter les bugs et nous suggérer de nouvelles fonctionalités.
+*  **Open-Source** : L’ensemble des sources des différents logiciels composant la solution ***TechnoLarp***, des documentations et des fichiers de conception (plan de conception du PCB, fichiers permettant l'impression 3D des boitiers ...) sont diffusés sous licence open-source via les repository TechnoLarp. GitHub permet également à notre communauté de nous remonter les bugs et de nous suggérer de nouvelles fonctionalités.
 *  **Modulaires** : Possibilité (pour les utilisateurs avancés) de créer de modules d’extension pour étendre les fonctionnalités des dispositifs de base.
 
 # Structure
