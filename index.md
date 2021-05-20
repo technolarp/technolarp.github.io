@@ -1,5 +1,11 @@
 Syntax highlighted code block
 
+
+# TEST
+
+[FR.md](FR.md)
+[./FR.md](./FR.md)
+
 # Header 1
 ## Header 2
 ### Header 3
