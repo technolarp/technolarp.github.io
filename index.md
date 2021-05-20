@@ -8,19 +8,19 @@ En termes techniques, les dispositifs TechnoLarp se composent de :
 * De périphériques d’entrée / sorties divers (boutons poussoirs, potentiomètre, capteurs, écran oled, afficheur 7 segments, leds RGB, …)
 
 # Conception
-Les dispositifs ***TechnoLarp*** seront conçus pour être :
-* **Faciles d’utilisation pour les organisateurs**
-  *  **Aucune compétence en électronique ou en programmation requise** : Il sera possible d'adapter les dispositifs aux besoins de votre événement uniquement par des actions de configuration.
-  *  Une fois les connecteurs soudés au PCB, aucune autre soudure n’est nécessaire (le déploiement d’un dispositif se limitera à brancher des câbles en suivant les instructions du manuel ou des vidéos explicatives)
-  *  L’ensemble des opérations de déploiement et d’utilisation des dispositifs TechnoLarp seront détaillés dans un manuel clair, exhaustif et illustré ainsi qu’un ensemble de capsules tutoriels-vidéo.
+Les dispositifs ***TechnoLarp*** sont conçus pour être :
+* **Facile d’utilisation pour les organisateurs**
+  *  **Aucune compétence en électronique ou en programmation requise** : Il est possible d'adapter les dispositifs aux besoins de votre événement uniquement par des actions de configuration.
+  *  Une fois les connecteurs soudés au PCB, aucune autre soudure n’est nécessaire (le déploiement d’un dispositif se limite à brancher des câbles en suivant les instructions du manuel ou des vidéos explicatives).
+  *  L’ensemble des opérations de déploiement et d’utilisation des dispositifs TechnoLarp sont détaillés dans un manuel clair, exhaustif et illustré ainsi qu’un ensemble de capsules tutoriels-vidéo.
 *  **Adaptés aux besoins et cas d’utilisation de la pratique du GN**
-*  **Autonomes** : Les dispositifs ***TechnoLarp*** seront conçus pour qu’une fois déployés les joueurs puissent interagir avant sans nécessiter d’action de la part d’un organisateur.
-*  **Robustes** : L’utilisation de systèmes électroniques dans le contexte d’un GN comportent de nombreux risques (exemples : chocs, absence d'alimentation électrique -> batteries, utilisation  des systèmes en extérieur). Ces risques seront pris en compte dès la conception.
-*  **Résilients** : Les dispositifs ***TechnoLarp*** seront conçus pour prendre en compte la possibilité d’une défaillance et offrir deux moyens simples aux organisateurs de pouvoir agir :
-   *  Au travers d’un back office accessible en wifi via n’importe quel navigateur (défaillance dans le déroulement du scénario, reboot non prévu, …)
+*  **Autonomes** : Les dispositifs ***TechnoLarp*** sont conçus pour qu’une fois déployés les joueurs puissent interagir avant sans nécessiter d’action de la part d’un organisateur.
+*  **Robustes** : L’utilisation de systèmes électroniques dans le contexte d’un GN comportent de nombreux risques (exemples : chocs, absence d'alimentation électrique -> batteries, utilisation  des systèmes en extérieur). Ces risques sont pris en compte dès la conception.
+*  **Résilients** : Les dispositifs ***TechnoLarp*** sont conçus pour prendre en compte la possibilité d’une défaillance et offrir deux moyens simples aux organisateurs de pouvoir agir :
+   *  Au travers d’un back office accessible en wifi via n’importe quel navigateur (défaillance dans le déroulement du scénario d'éxécution, reboot non prévu, …)
    *  Chaque composant est facilement remplaçable en cas de panne matérielle.
-*  **Économiques** : Par souci de rendre les dispositifs ***TechnoLarp*** accessibles au plus grand nombre d’organisateurs nous resterons vigilants à choisir les composants & matières premières adaptées à notre besoin offrant le meilleur rapport qualité-prix.
-*  **Open-Source** : L’ensemble des sources des différents logiciels composant la solution ***TechnoLarp***, des documentations et des fichiers de conception (plan de conception du PCB, fichiers permettant l'impression 3D des boitiers ...) seront diffusés sous licence open-source via les repository TechnoLarp. GitHub permettra également à notre communauté de nous remonter les bugs et nous suggérer de nouvelles fonctionalités.
+*  **Économiques** : Par souci de rendre les dispositifs ***TechnoLarp*** accessibles au plus grand nombre d’organisateurs nous restons vigilants à choisir les composants & matières premières adaptées à notre besoin offrant le meilleur rapport qualité-prix.
+*  **Open-Source** : L’ensemble des sources des différents logiciels composant la solution ***TechnoLarp***, des documentations et des fichiers de conception (plan de conception du PCB, fichiers permettant l'impression 3D des boitiers ...) sont diffusés sous licence open-source via les repository TechnoLarp. GitHub petmets également à notre communauté de nous remonter les bugs et nous suggérer de nouvelles fonctionalités.
 *  **Modulaires** : Possibilité (pour les utilisateurs avancés) de créer de modules d’extension pour étendre les fonctionnalités des dispositifs de base.
 
 # Structure
