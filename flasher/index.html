@@ -1,0 +1,153 @@
+ <!DOCTYPE html>
+ <html>
+
+
+<script  type="module"  src="https://unpkg.com/esp-web-tools@9/dist/web/install-button.js?module">
+</script>
+
+
+<head>
+<title>technoLARP ESP Web Tools</title>
+</head>
+<body>
+
+
+<h1>Flasher</h1>
+      <p>Selectionnez votre firmware</p>
+      <select name="type" class="radios">
+		<option value="bombe_7segment_01" />bombe_7segment_01</option>
+		<option value="cloneur_rfid_01" />cloneur_rfid_01</option>
+		<option value="panneau_01" />panneau_01</option>
+		<option value="serrure_clavier_01" />serrure_clavier_01</option>
+		<option value="serrure_medfan_01" />serrure_medfan_01</option>
+		<option value="serrure_medfan_02" />serrure_medfan_02</option>
+		<option value="serrure_rfid_01" />serrure_rfid_01</option>
+		<option value="vumetre_01" />vumetre_01</option>
+		<option disabled>--------------</option>		
+		<option value="panneau_01_github" />panneau_01 depuis github</option>
+		<option disabled>--------------</option>
+		<option value="vumetre_01_D4" />vumetre_01 avec neopixel sur D4</option>
+		<option value="panneau_01_D4" />panneau_01 avec neopixel sur D4</option>
+      </select>
+<script>
+
+function getSelectElem(name) {
+        return document.querySelector(`select[name=${name}]`);
+      }
+
+function getManifestUrl() {       
+		if (getSelectElem('type').value == 'panneau_01')
+		{
+			console.log("https://technolarp.github.io/flasher/manifest/panneau_01.manifest.json");
+			return "https://technolarp.github.io/flasher/manifest/panneau_01.manifest.json";
+		}
+		if (getSelectElem('type').value == 'vumetre_01')
+		{
+			console.log("https://technolarp.github.io/flasher/manifest/vumetre_01.manifest.json");
+			return "https://technolarp.github.io/flasher/manifest/vumetre_01.manifest.json";
+		}
+		 if (getSelectElem('type').value == 'bombe_7segment_01')
+		{
+			console.log("https://technolarp.github.io/flasher/manifest/bombe_7segment_01.manifest.json");
+			return "https://technolarp.github.io/flasher/manifest/bombe_7segment_01.manifest.json";
+		}
+		
+		if (getSelectElem('type').value == 'cloneur_rfid_01')
+		{
+			console.log("https://technolarp.github.io/flasher/manifest/cloneur_rfid_01.manifest.json");
+			return "https://technolarp.github.io/flasher/manifest/cloneur_rfid_01.manifest.json";
+		}
+		if (getSelectElem('type').value == 'serrure_clavier_01')
+		{
+			console.log("https://technolarp.github.io/flasher/manifest/serrure_clavier_01.manifest.json");
+			return "https://technolarp.github.io/flasher/manifest/serrure_clavier_01.manifest.json";
+		}
+		if (getSelectElem('type').value == 'serrure_medfan_01')
+		{
+			console.log("https://technolarp.github.io/flasher/manifest/serrure_medfan_01.manifest.json");
+			return "https://technolarp.github.io/flasher/manifest/serrure_medfan_01.manifest.json";
+		}
+		if (getSelectElem('type').value == 'serrure_medfan_02')
+		{
+			console.log("https://technolarp.github.io/flasher/manifest/serrure_medfan_02.manifest.json");
+			return "https://technolarp.github.io/flasher/manifest/serrure_medfan_02.manifest.json";
+		}
+		if (getSelectElem('type').value == 'serrure_rfid_01')
+		{
+			console.log("https://technolarp.github.io/flasher/manifest/serrure_rfid_01.manifest.json");
+			return "https://technolarp.github.io/flasher/manifest/serrure_rfid_01.manifest.json";
+		}		
+		
+		if (getSelectElem('type').value == 'panneau_01_github')
+		{
+			console.log("https://technolarp.github.io/flasher/manifest/panneau_01.github.manifest.json");
+			return "https://technolarp.github.io/flasher/manifest/panneau_01.github.manifest.json";
+		}
+		if (getSelectElem('type').value == 'vumetre_01_D4')
+		{
+			console.log("https://technolarp.github.io/flasher/manifest/vumetre_01_D4.manifest.json");
+			return "https://technolarp.github.io/flasher/manifest/vumetre_01_D4.manifest.json";
+		}
+		if (getSelectElem('type').value == 'panneau_01_D4')
+		{
+			console.log("https://technolarp.github.io/flasher/manifest/panneau_01_D4.manifest.json");
+			return "https://technolarp.github.io/flasher/manifest/panneau_01_D4.manifest.json";
+		}
+      }
+
+function onSelectionChanged() {
+        const button = document.querySelector('esp-web-install-button');
+		console.log(getSelectElem('type').value);
+        button.manifest = getManifestUrl();        
+      }
+	  
+      getSelectElem('type').addEventListener('change', onSelectionChanged);
+	  
+</script>
+
+<br>
+<br>
+<br>
+<br>
+
+<esp-web-install-button
+  manifest="https://technolarp.github.io/flasher/manifest/vumetre_01.manifest.json"
+></esp-web-install-button>
+
+<br><br>
+<h1><b>Manuel rapide</b></h1>
+Utiliser cette page sur un navigateur chrome ou edge (ESP Web Tools ne fonctionne pas avec firefox)<br>
+<br>
+Sélectionner le firmware à installer dans la liste déroulante<br>
+Connecter le wemos D1 mini pro sur un port USB<br>
+Cliquer sur le bouton CONNECT<br>
+<br>
+
+Choisir le port USB qui correspond au wemos<br>
+Cliquer sur le bouton "Connexion"<br>
+<img src="https://technolarp.github.io/flasher/image/step_01.png" width="400"  /><br><br>
+
+Cliquer sur "INSTALL TECHNOLARP xxxx"<br>
+<img src="https://technolarp.github.io/flasher/image/step_02.png" width="400"  /><br><br>
+
+A l'étape Confirm installation, cliquer sur INSTALL<br>
+<img src="https://technolarp.github.io/flasher/image/step_03.png" width="400"  /><br><br>
+
+Différentes étape se succèdent, Preparing / Erasing / Installing<br>
+<img src="https://technolarp.github.io/flasher/image/step_04.png" width="400"  /><br><br>
+<img src="https://technolarp.github.io/flasher/image/step_05.png" width="400"  /><br><br>
+<img src="https://technolarp.github.io/flasher/image/step_06.png" width="400"  /><br><br>
+
+<br><br>
+Bonus, on peux accèder à la sortie serial en cliquant sur "LOGS & CONSOLE"<br>
+<img src="https://technolarp.github.io/flasher/image/step_07.png" width="400"  />
+<img src="https://technolarp.github.io/flasher/image/step_08.png" width="400"  /><br><br>
+
+<br><br>
+
+
+
+
+
+</body>
+</html>
