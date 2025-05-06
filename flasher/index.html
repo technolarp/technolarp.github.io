@@ -28,6 +28,7 @@
 		<option disabled>--------------</option>
 		<option value="vumetre_01_D4" />vumetre_01 avec neopixel sur D4</option>
 		<option value="panneau_01_D4" />panneau_01 avec neopixel sur D4</option>
+	        <option value="vumetre_01_v1.2.0" />vumetre_01 version 1.2.0</option>
       </select>
 <script>
 
@@ -92,6 +93,11 @@ function getManifestUrl() {
 		{
 			console.log("https://technolarp.github.io/flasher/manifest/panneau_01_D4.manifest.json");
 			return "https://technolarp.github.io/flasher/manifest/panneau_01_D4.manifest.json";
+		}
+		if (getSelectElem('type').value == 'vumetre_01_v1.2.0')
+		{
+			console.log("https://technolarp.github.io/flasher/manifest/vumetre_01_D4.manifest.json");
+			return "https://technolarp.github.io/flasher/manifest/vumetre_01_D4.manifest.json";
 		}
       }
 
