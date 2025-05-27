@@ -16,6 +16,7 @@
       <p>Selectionnez votre firmware</p>
       <select name="type" class="radios">
 		<option disabled>--------------</option>
+		<option selected disabled hidden/>sélectionnez une valeur</option>
 		<option value="bombe_7segment_01" />bombe_7segment_01</option>
 		<option value="cloneur_rfid_01" />cloneur_rfid_01</option>
 		<option value="panneau_01" />panneau_01</option>
@@ -80,6 +81,7 @@ function getManifestUrl() {
 			console.log("https://technolarp.github.io/flasher/manifest/vumetre_01_v1.2.0.manifest.json");
 			return "https://technolarp.github.io/flasher/manifest/vumetre_01_v1.2.0.manifest.json";
 		}
+	document.querySelector('esp-web-install-button').disabled = false
       }
 
 function onSelectionChanged() {
@@ -97,7 +99,7 @@ function onSelectionChanged() {
 <br>
 <br>
 
-<esp-web-install-button
+<esp-web-install-button disabled
   manifest="https://technolarp.github.io/flasher/manifest/panneau_01.manifest.json"
 ></esp-web-install-button>
 
