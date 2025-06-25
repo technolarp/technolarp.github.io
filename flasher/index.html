@@ -15,104 +15,33 @@
   <body>
     <h1>Flasher</h1>
     <p>Selectionnez votre firmware</p>
-    <div x-data="{ manifestSelected: false }">
-      <select name="type" class="radios" x-on:change="manifestSelected = true">
-        <option disabled>--------------</option>
-        <option selected disabled hidden>sélectionnez une valeur</option>
-        <option value="bombe_7segment_01">bombe_7segment_01</option>
-        <option value="cloneur_rfid_01">cloneur_rfid_01</option>
-        <option value="panneau_01">panneau_01</option>
-        <option value="serrure_clavier_01">serrure_clavier_01</option>
-        <option value="serrure_medfan_01">serrure_medfan_01</option>
-        <option value="serrure_medfan_02">serrure_medfan_02</option>
-        <option value="serrure_rfid_01">serrure_rfid_01</option>
-        <option value="vumetre_01">vumetre_01</option>
-        <option value="vumetre_01_v1.2.0">vumetre_01 v1.2.0</option>
-        <option disabled>--------------</option>
+    <div x-data="{ manifestSelected: false, selectedManifest : '' }">
+      <select name="type" class="radios" x-on:change="manifestSelected = true" x-model="selectedManifest">
+        <option disabled value="">--------------</option>
+        <option selected disabled value="">sélectionnez une valeur</option>
+        <option value="https://technolarp.github.io/flasher/manifest/bombe_7segment_01.manifest.json">bombe_7segment_01</option>
+        <option value="https://technolarp.github.io/flasher/manifest/cloneur_rfid_01.manifest.json">cloneur_rfid_01</option>
+        <option value="https://technolarp.github.io/flasher/manifest/panneau_01.manifest.json">panneau_01</option>
+        <option value="https://technolarp.github.io/flasher/manifest/serrure_clavier_01.manifest.json">serrure_clavier_01</option>
+        <option value="https://technolarp.github.io/flasher/manifest/serrure_medfan_01.manifest.json">serrure_medfan_01</option>
+        <option value="https://technolarp.github.io/flasher/manifest/serrure_medfan_02.manifest.json">serrure_medfan_02</option>
+        <option value="https://technolarp.github.io/flasher/manifest/serrure_rfid_01.manifest.json">serrure_rfid_01</option>
+        <option value="https://technolarp.github.io/flasher/manifest/vumetre_01.manifest.json">vumetre_01</option>
+        <option value="https://technolarp.github.io/flasher/manifest/vumetre_01_v1.2.0.manifest.json">vumetre_01 v1.2.0 -</option>
       </select>
-      <script>
-        function getSelectElem(name) {
-          return document.querySelector(`select[name=${name}]`);
-        }
 
-        function getManifestUrl() {
-          if (getSelectElem("type").value == "panneau_01") {
-            console.log(
-              "https://technolarp.github.io/flasher/manifest/panneau_01.manifest.json"
-            );
-            return "https://technolarp.github.io/flasher/manifest/panneau_01.manifest.json";
-          }
-          if (getSelectElem("type").value == "vumetre_01") {
-            console.log(
-              "https://technolarp.github.io/flasher/manifest/vumetre_01.manifest.json"
-            );
-            return "https://technolarp.github.io/flasher/manifest/vumetre_01.manifest.json";
-          }
-          if (getSelectElem("type").value == "bombe_7segment_01") {
-            console.log(
-              "https://technolarp.github.io/flasher/manifest/bombe_7segment_01.manifest.json"
-            );
-            return "https://technolarp.github.io/flasher/manifest/bombe_7segment_01.manifest.json";
-          }
-
-          if (getSelectElem("type").value == "cloneur_rfid_01") {
-            console.log(
-              "https://technolarp.github.io/flasher/manifest/cloneur_rfid_01.manifest.json"
-            );
-            return "https://technolarp.github.io/flasher/manifest/cloneur_rfid_01.manifest.json";
-          }
-          if (getSelectElem("type").value == "serrure_clavier_01") {
-            console.log(
-              "https://technolarp.github.io/flasher/manifest/serrure_clavier_01.manifest.json"
-            );
-            return "https://technolarp.github.io/flasher/manifest/serrure_clavier_01.manifest.json";
-          }
-          if (getSelectElem("type").value == "serrure_medfan_01") {
-            console.log(
-              "https://technolarp.github.io/flasher/manifest/serrure_medfan_01.manifest.json"
-            );
-            return "https://technolarp.github.io/flasher/manifest/serrure_medfan_01.manifest.json";
-          }
-          if (getSelectElem("type").value == "serrure_medfan_02") {
-            console.log(
-              "https://technolarp.github.io/flasher/manifest/serrure_medfan_02.manifest.json"
-            );
-            return "https://technolarp.github.io/flasher/manifest/serrure_medfan_02.manifest.json";
-          }
-          if (getSelectElem("type").value == "serrure_rfid_01") {
-            console.log(
-              "https://technolarp.github.io/flasher/manifest/serrure_rfid_01.manifest.json"
-            );
-            return "https://technolarp.github.io/flasher/manifest/serrure_rfid_01.manifest.json";
-          }
-          if (getSelectElem("type").value == "vumetre_01_v1.2.0") {
-            console.log(
-              "https://technolarp.github.io/flasher/manifest/vumetre_01_v1.2.0.manifest.json"
-            );
-            return "https://technolarp.github.io/flasher/manifest/vumetre_01_v1.2.0.manifest.json";
-          }
-        }
-
-        function onSelectionChanged() {
-          const button = document.querySelector("esp-web-install-button");
-          console.log(getSelectElem("type").value);
-          button.manifest = getManifestUrl();
-        }
-
-        getSelectElem("type").addEventListener("change", onSelectionChanged);
-      </script>
-
+	  
       <br />
       <br />
       <br />
       <br />
 
       <esp-web-install-button
-        x-show="manifestSelected"
-        manifest="https://technolarp.github.io/flasher/manifest/panneau_01.manifest.json"
+        x-show="selectedManifest !== ''"
+        x-bind:manifest="selectedManifest"
       ></esp-web-install-button>
       <button
-        x-show="!manifestSelected"
+        x-show="selectedManifest === ''"
         disabled
         style="
           position: relative;
