@@ -11,23 +11,29 @@
       defer
       src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
+    <script src="manifests_list.js"></script>
   </head>
   <body>
     <h1>Flasher</h1>
     <p>Selectionnez votre firmware</p>
-    <div x-data="{ manifestSelected: false, selectedManifest : '' }">
-      <select name="type" class="radios" x-on:change="manifestSelected = true" x-model="selectedManifest">
+    <div x-data="{ selectedManifest : '', manifests: manfestList, selectedObject: '' }">
+      
+      <select name="type" class="radios" x-model="selectedObject" x-on:change="selectedManifest = ''">
         <option disabled value="">--------------</option>
         <option selected disabled value="">sélectionnez une valeur</option>
-        <option value="https://technolarp.github.io/flasher/manifest/bombe_7segment_01.manifest.json">bombe_7segment_01</option>
-        <option value="https://technolarp.github.io/flasher/manifest/cloneur_rfid_01.manifest.json">cloneur_rfid_01</option>
-        <option value="https://technolarp.github.io/flasher/manifest/panneau_01.manifest.json">panneau_01</option>
-        <option value="https://technolarp.github.io/flasher/manifest/serrure_clavier_01.manifest.json">serrure_clavier_01</option>
-        <option value="https://technolarp.github.io/flasher/manifest/serrure_medfan_01.manifest.json">serrure_medfan_01</option>
-        <option value="https://technolarp.github.io/flasher/manifest/serrure_medfan_02.manifest.json">serrure_medfan_02</option>
-        <option value="https://technolarp.github.io/flasher/manifest/serrure_rfid_01.manifest.json">serrure_rfid_01</option>
-        <option value="https://technolarp.github.io/flasher/manifest/vumetre_01.manifest.json">vumetre_01</option>
-        <option value="https://technolarp.github.io/flasher/manifest/vumetre_01_v1.2.0.manifest.json">vumetre_01 v1.2.0 -</option>
+        <template x-for="manifest in manifests" :key="manifest.object">
+          <option x-bind:value="manifest.object" x-text="manifest.object"></option>
+        </template>
+      </select>
+
+
+      <select name="type" class="radios" x-model="selectedManifest" 
+      x-show="selectedObject">
+        <option disabled value="">--------------</option>
+        <option selected disabled value="">sélectionnez une valeur</option>
+        <template x-for="version in manifests.find((e) => e.object === selectedObject).versions" :key="version.id">
+          <option x-bind:value="version.manifest" x-text="version.id"></option>
+        </template>
       </select>
 
 	  
