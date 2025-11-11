@@ -68,7 +68,7 @@ var manfestList = [
         "versions" : [
             {
                 "id" : "latest",
-                "manifest" : "https://technolarp.github.io/flasher/manifest/vumetre_01.manifest.json"
+                "manifest" : "https://technolarp.github.io/flasher/manifest/vumetre_01_v1.3.0.manifest.json"
             },
             {
                 "id" : "v1.2.0",
