@@ -17,7 +17,11 @@ var manfestList = [
         "versions" : [
             {
                 "id" : "latest",
-                "manifest" : "https://technolarp.github.io/flasher/manifest/cloneur_rfid_01.manifest.json"
+                "manifest" : "https://technolarp.github.io/flasher/manifest/cloneur_rfid_01_v1.3.0.manifest.json"
+            },
+            {
+                "id" : "v1.3.0",
+                "manifest" : "https://technolarp.github.io/flasher/manifest/cloneur_rfid_01_v1.3.0.manifest.json"
             }
         ] 
     },
